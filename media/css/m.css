@@ -1,0 +1,29 @@
+:root{
+    --blueish:      #0F468C;
+    --light_blue:   #218DA6;
+    --yellow:       #F2B705;
+    --orange:       #F2A444; 
+    --orangeTransparent:#218ea69a;
+    --grey_white:   #F2F2F2;
+}
+.comingSoon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--yellow);
+    text-align: center;
+}
+h2{
+    font-size: 3em;
+}
+.text{
+    font-size: 1.5em !important;
+}
+.comingSoon div .imgHolder img{
+    width: 20vw;
+}
+
+#footerMargin{
+    margin-top: 0 !important;
+
+}

@@ -1,0 +1,112 @@
+:root{
+    --blueish:      #0F468C;
+    --light_blue:   #218DA6;
+    --yellow:       #F2B705;
+    --orange:       #F2A444; 
+    --grey_white:   #F2F2F2;
+}
+.screenSection{
+    margin: 0;
+    background-color: var(--blueish);
+    display: grid;
+    grid-template-rows: 100vh 0vh 0vh;
+    min-height: 100vh;
+    max-height: 100vh;
+    transition: 1s;
+    overflow: hidden;
+}
+.mainSection{
+    background-color: var(--blueish);
+    transition: 1s;
+    opacity: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: hidden;
+}
+.mainSection div{
+    position: relative;
+    width: 50vw;
+    height: 70vh;   
+    transition: 1s;
+}
+.subSection{
+    height: 87vh;
+    background-color: var(--grey_white);
+    display: none;
+}
+.footerSection{
+    height: 15vh;
+    background-color: var(--light_blue);
+    display: none;
+}
+.logoSection{
+    height: 20vh;
+}
+.sloganSection{
+    color: var(--grey_white);
+    text-align: center;
+    margin-right:5vw ;
+    margin-top: -15vh;
+    transition: 1s;
+    opacity: 0;
+}
+.sloganSection p{
+    font-size: 1.2em;
+    max-height: fit-content;
+}
+.homeSection{
+    max-height:10px;
+    margin: 0 !important;
+    padding: 0;
+}
+.homeSection button{
+    border: none;
+    font-size: 1.3em;
+    padding: .5em;
+    border-radius: .25em;
+    background-color: var(--grey_white);
+    color: var(--blueish);
+    box-shadow: .25em .25em .5em black;
+    font-weight: 500;
+    transition: scale .5s;
+}
+.homeSection button:hover{
+    scale: 1.2;
+}
+
+.slideDown{
+    margin-top:-8vh !important;
+    opacity: 1 !important;
+}
+
+@media screen and (max-width:768px){
+    .homeSection button{
+        font-size: 0.86em;
+    }
+    .sloganSection{
+        margin-top:-30vh !important;
+    }
+    .sloganSection p{
+        font-size: .8em;
+    }
+    .sloganSection h1{
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width:576px){
+    .mainSection div{
+        width: 75vw;
+    }
+    .homeSection button{
+        font-size: 0.65em;
+    }
+    .sloganSection{
+        margin-top:-30vh !important;
+    }
+    .sloganSection p{
+        font-size: .6em;
+    }
+    .sloganSection h1{
+        font-size: 1em;
+    }
+}

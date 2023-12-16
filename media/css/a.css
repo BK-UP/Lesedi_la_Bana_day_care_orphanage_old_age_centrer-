@@ -1,0 +1,67 @@
+:root{
+    --blueish:      #0F468C;
+    --light_blue:   #218DA6;
+    --yellow:       #F2B705;
+    --orange:       #F2A444; 
+    --orangeTransparent:#218ea69a;
+    --grey_white:   #F2F2F2;
+}
+.aboutus{
+    padding: 5em;
+}
+.imgPlaceholder{
+    margin-top: 2.5em;
+    width: 30vh;
+    background-color: rgb(156, 156, 156);
+    backdrop-filter: blur(20px);
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0em 0em 1em black;
+
+}
+.imgPlaceholder h1{
+    font-size: 1.7em !important;
+}
+.imgClass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.values_ethics{
+    margin-top: 5vh;
+    padding: 3em;
+}
+.values_ethics div ul{
+    list-style:none;
+}
+.values_ethics div ul li{
+    margin: 2vh 0;
+    border-radius: 0.5em;
+    background-color: #f2b705b6;
+    box-shadow: 0em 0em .25em black;
+    padding: 1em;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.iconUser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.iconUser i{
+    font-size: 5em;
+}
+.card-header{
+    margin: 0;
+}
+.cardBuilder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

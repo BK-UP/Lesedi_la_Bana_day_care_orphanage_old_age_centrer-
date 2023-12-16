@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Boikanyo Tshwale">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.lineicons.com/4.0/lineicons.css" />
+    <link rel="stylesheet" href="media/css/m.css" type="text/css">
+    <link rel="stylesheet" href="media/css/home.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./media/img/LogoIco.svg">
+    <title>Media</title>
+</head>
+<body onload="loadPage()">
+    <nav >
+        <div id="navDiv" class="row">
+            <div class="col-12 col-md-4 row leftNav">
+                <div class="col-4 iconMenue">
+                    <i class="lni lni-menu" id="menuBtn"style="font-size: 1.2em; color: #0F468C; background-color:#F2F2F2; padding: 10px; border-radius: .25em;" onclick="openNav()"></i>
+                </div>
+                <div class="col-8 logoSec">
+                    <img  src="media/img/Logo.svg" alt="Lesedi la Bana Logo">
+                </div>
+            </div>
+            <ul class="navBar col-12 col-md-8 row align-items-center rightNav">
+                <li class="col-12 exitNav"><span onclick="closeNav()">X</span></li>
+                <li class="col-12 col-md-4"><span onclick="goToHome()"><i class="lni lni-home navicons"></i>Home</span></li>
+                <li class="col-12 col-md-4"><span onclick="goToAbout()"><i class="lni lni-users navicons"></i>About Us</span></li>
+                <li class="col-12 col-md-4 active"><span onclick="goToMedia()"><i class="lni lni-play navicons"></i>Media</span></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="containerClass comingSoon">
+            <div>
+                <div class="imgHolder">
+                    <img src="media/img/caution-sign-svgrepo-com.svg" alt="caution">
+                </div>
+                <h2>Coming Soon</h2>
+                <p class="text">Page Under Construction</p>
+            </div>
+    </div>
+    <footer id="footerMargin">
+        <div class="explain">
+            <div class="row HeadIng">
+                <img class="col-4" src="media/img/Logo.svg" alt="logo">
+                <div class="col-8">
+                    <h5 class="footerHedings">Lesedi la Bana day care old age and orphanage center.</h5>
+                    <p>Vision and Mission, seeks to perform the duties and responsibilities associated with its mandate to the best of its ability and in good faith.</p>
+                    <p class="followUs">Follow us on: <a href="https://www.facebook.com/profile.php?id=61554831590594" target="_blank"><i class="fa fa-facebook-f"></i></a><a href="https://www.instagram.com/lesedilabana_/" target="_blank"><i class="fa fa-instagram"></i></a></p>
+                </div>
+            </div>
+        </div>
+        <div class="contactUs">
+            <ul>
+                <li><h5 class="footerHedings">Contact Us</h5></li>
+                <li><i class="lni lni-phone"></i><span>072 016 6657</span></li>
+                <li><i class="lni lni-envelope"></i><span><a href="mailto:Lesedilabana@gmail.com">Lesedilabana@gmail.com</a></span></li>
+            </ul>
+        </div>
+        
+    </footer>
+    <script src="media/js/home.js"></script>
+</body>
+</html>

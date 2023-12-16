@@ -1,0 +1,230 @@
+:root{
+    --blueish:      #0F468C;
+    --light_blue:   #218DA6;
+    --yellow:       #F2B705;
+    --orange:       #F2A444; 
+    --grey_white:   #F2F2F2;
+}
+@font-face{
+    font-family: 'anti';
+  src: url('../fonts/AntipastoPro_trial.ttf');
+}
+#navDiv {
+    opacity: 0;
+    transition: .5s;
+}
+nav{
+    transition: 1s;
+}
+.active span{
+    padding: .75vw;
+    border-radius: .25em;
+    color: var(--blueish);
+    background-color: var(--grey_white);
+}
+.exitNav{
+    display: none;}
+body{
+    display: grid;
+    grid-template-rows: 13vh 1fr;
+    margin: 0;
+    background-color: var(--grey_white);
+    overflow-x: hidden;
+}
+nav{
+    background-color: var(--blueish);
+}
+
+.leftNav div{
+    height: 13vh;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+}
+.leftNav div img{
+    height: 13vh;
+}
+.iconMenue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.navBar{
+    
+    margin: 0;
+    text-align: center;
+    list-style: none;
+    
+}
+.navBar li{
+    color: var(--grey_white);
+}
+.navBar li span{
+    padding: .75vw;
+    cursor: pointer;
+}
+.navBar li span:hover{
+    border-bottom: 2px solid var(--grey_white);
+}
+.navicons{
+    padding-right: .5vw;
+}
+.containerClass{
+    min-height: 87vh;
+}
+@media screen and (max-width:767px) {
+    .iconMenue{
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+    .navBar{
+        font-size:3vw;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 30vw;
+        height: 50vh;
+        text-align: left;
+        z-index: 1;
+        background-color: var(--yellow);
+    }
+    .navBar{
+        translate: -31vw 0vh;
+        transition: 1s;
+    }
+    .navBar li{
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    
+    .exitNav{
+        
+        position: relative;
+        top: 0;
+        right: 0;
+        display: block;
+    }
+    .exitNav span{
+        aspect-ratio: 1/1;
+        cursor: pointer;
+    }
+    .exitNav span:hover{
+        border: none !important;
+        background-color: red;
+    }
+    footer{
+        grid-template-columns: 1fr !important;
+        font-size: 2vw;
+    }
+    .footerHedings{
+        font-size: 3vw !important;
+    }
+    .explain{
+        border: none !important;
+    }
+    .fa-facebook-f{
+        padding: 2px !important;
+    }
+}
+@media screen and (max-width:560px) {
+    .navBar li{
+        padding: 0;
+    }
+    .navBar{
+        font-size:3vw;
+    }
+}
+@media screen and (min-width:768px) {
+    .navBar{
+        translate: none !important;
+    }
+}
+footer{
+    margin-top: 5vh;
+    color: white;
+    min-height: 20vh;
+    background-color: var(--blueish);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 10px;
+}
+footer .explain{
+ border-right: solid 1px var(--grey_white);
+}
+footer{
+    padding-top:10vh ;
+}
+.explain .HeadIng{
+    padding-right: 2vw;    
+
+}
+.contactUs ul{
+    list-style: none;
+
+}
+.contactUs ul li i{
+    padding: 1vh .5vw;
+}
+.contactUs ul li span a{
+    color: var(--grey_white);
+    text-decoration: none;
+    cursor: pointer;
+}
+.contactUs ul li span a:hover{
+    text-decoration: underline;
+}
+.footerHedings{
+    font-size: 1.5em;
+}
+.followUs a{
+    color: white;
+    margin: 0 .5vw;
+    transition: .5s;
+}
+.followUs a:hover{
+    color: var(--yellow);
+}
+.followUs a:hover .fa-facebook-f{
+    background-color: var(--yellow);
+}
+.fa-facebook-f{
+    padding:.1vw .2vw;
+    border-radius: 50%;
+    background-color: var(--grey_white);
+    color: var(--blueish);
+    transition: .5s;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #ffffff00; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--orange);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--yellow); 
+  }
+  .containerClass{
+    translate: 20vw 0;
+    opacity: 0;
+    transition: 1s;
+}
+.followUs, .contactUs, p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .9em;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
